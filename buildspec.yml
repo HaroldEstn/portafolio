@@ -5,7 +5,7 @@ phases:
     commands:
       - echo $BUCKET
       - echo $FOLDER
-      - aws s3 sync index.html s3://$BUCKET/$FOLDER
+      - aws s3 sync . s3://$BUCKET/$FOLDER/ --exclude ".*"
   post_build:
     commands:
       - echo "Success"
