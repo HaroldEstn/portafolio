@@ -3,8 +3,9 @@ version: 0.2
 phases:
   build:
     commands:
-      - echo $BUKECT
-      - aws s3 sync index.html $BUCKET 
+      - echo $BUCKET
+      - echo $FOLDER
+      - aws s3 sync index.html s3://$BUCKET/$FOLDER
   post_build:
     commands:
       - echo "Success"
