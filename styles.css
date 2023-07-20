@@ -6,11 +6,19 @@ body {
   margin: 0 auto;
 }
 
+h1 {
+  font-size: 4vmax;
+}
+
+p {
+  font-size: 1.5vmax;
+}
+
 .grid-container {
   height: 100vh;
   display: grid;
-  grid-template-columns: 1fr 50px;
-  grid-template-rows: 50px 1fr 30px;
+  grid-template-columns: 1fr 13vh;
+  grid-template-rows: 13vh 1fr 8vh;
 }
 
 .header, .menu, .content, .footer{
@@ -44,7 +52,10 @@ body {
 }
 
 img {
-  width: 40px;
+  display: flex;
+  width: 80%;
+  justify-content: center;
+  align-items: center;
 }
 
 nav ul {
@@ -65,9 +76,10 @@ nav a {
 .dropdown-content {
     display: none;
     position: absolute;
-    right: 0;
-    padding: 20px;
-    margin-top: 10px;
+    left: 0;
+    top: 13vh;
+    width: 50%;
+    height: calc(100% - 13vh);
     background-color: #f9f9f9;
     min-width: 80px;
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
@@ -76,5 +88,15 @@ nav a {
 
 .dropdown-content li {
     display: block;
+    margin: 8%;
+    margin-top: 10%;
+    margin-bottom: 10%;
+}
+
+.dropdown-content a {
+    display: inline-block;
+    font-size: 2vmax;
+    padding-left: 10%;
+    width: 90%;
 }
 
