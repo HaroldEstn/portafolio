@@ -51,7 +51,7 @@ p {
   background-color: #777;
 }
 
-img {
+.drop-menu img {
   display: flex;
   width: 80%;
   justify-content: center;
@@ -100,3 +100,70 @@ nav a {
     width: 90%;
 }
 
+.normal-menu {
+  display: none;
+}
+
+@media (min-width: 1024px) {
+  body {
+    max-width: 1400px;
+  }
+
+ .grid-container {
+    height: 100vh;
+    display: grid;
+    grid-template-columns: 1fr 280px;
+    grid-template-rows: 13vh 1fr 8vh;
+  }   
+
+  .header {
+    grid-column: 1/2;
+    grid-row: 1/2;
+    background-color: #44aaaa;
+  }
+
+  .menu {
+    grid-column: 2/3;
+    grid-row: 1/4;
+    background-color: #aaa;
+  }
+
+  .content {
+    grid-row: 2/3;
+    grid-column: 1/2;
+    background-color: #999;
+  }
+
+  .footer {
+    grid-row: 3/4;
+    grid-column: 1/2;
+    background-color: #777;
+  }
+
+  .drop-menu {
+    display: none;
+  }
+
+  .normal-menu {
+    display: flex;
+    width: 100%;
+  }
+
+  .normal-menu ul {
+    display: flex;
+    flex-direction: column;
+    padding-left: 20px;
+    width: auto;
+  }
+
+  .normal-menu a {
+    font-size: 1.5em;
+    display: inline-block;
+    padding: 5px;
+    width: 100%;
+  }
+
+  .normal-menu li {
+    margin: 5px;
+  }
+}
