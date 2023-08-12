@@ -85,6 +85,10 @@ nav a {
     color: var(--color-1);
 }
 
+ul {
+  list-style-type: none;
+}
+
 .dropdown-content {
     display: none;
     position: absolute;
