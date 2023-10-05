@@ -2,3 +2,19 @@
   display: inline;
 }
 
+.main {
+  text-align: center;
+  font-family: serif, monospace, cursive;
+}
+
+.content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: left;
+}
+
+ul {
+  list-style-type: none;
+  padding-left: 0;
+}
