@@ -4,7 +4,7 @@
 
 .main {
   text-align: center;
-  font-family: serif, monospace, cursive;
+  font-family: monospace, cursive, serif;
 }
 
 .content {
@@ -17,4 +17,16 @@
 ul {
   list-style-type: none;
   padding-left: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+.bi-github {
+  color: #333333;
+}
+
+.bi-linkedin {
+  color: #0077b5;
 }
