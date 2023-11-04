@@ -2,146 +2,99 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>HaroldEstn</title>
   <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
 </head>
 <body>
-  <div class="grid-container">
+  <div class="main">
     <div class="header">
-      <h1>HaroldEstn</h1>
+      <h1>
+        HaroldEstn
+      </h1>
+      <ul>
+        <li>
+          <a href="https://github.com/HaroldEstn/" target="_blank"><i class="bi bi-github"></i></a>
+        </li>
+        <li>
+          <a href="https://www.linkedin.com/in/haroldestn" target="_blank"><i class="bi bi-linkedin"></i></a>
+        </li>
+      </ul>
     </div>
-    <div class="menu">
-      <nav class="drop-menu">
-        <ul>
-          <li class="dropdown" onclick="toggleDropdown()">
-            <a href="#" class="link">
-              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
-                <line x1="4" y1="6" x2="20" y2="6" stroke-width="2"/>
-                <line x1="4" y1="12" x2="20" y2="12" stroke-width="2"/>
-                <line x1="4" y1="18" x2="20" y2="18" stroke-width="2"/>
-              </svg>
-
-              <!-- <img src="icons/menu.svg" alt="svg_menu"> -->
-            </a>
-              <ul class="dropdown-content" id="dropdownMenu">
-                <li>
-                  <a href="#" class="link clicked" data-content="
-                    <p>Welcome<br>
-                    To Me<br>
-                    Portfolio!<br>
-                    Feel free to explore<br>
-                    and<br>
-                    discover what I have to offer.</p>
-                    ">Home</a>
-                </li>
-                <li>
-                  <a href="#" class="link" data-content="
-                    <p>Greetings,<br>
-                    I'm Harold Esteban<br>
-                    a dedicated software developer<br>
-                    with a talent for optimizing processes<br>
-                    through the DevOps methodology.<br><br>
-                    When I'm not crafting code,<br>
-                    you can find me immersed in music<br>
-                    or<br>
-                    exploring the world on two wheels.</p>
-                    ">About</a>
-                </li>
-                <li>
-                  <a href="#" class="link" data-content="
-                    <ul>
-                      <li>Match</li>
-                      <li>Hanoi</li>
-                      <li>2Delivery</li>
-                    </ul>
-                    ">Projects</a>
-                </li>
-                <li>
-                  <a href="#" class="link" data-content="
-                    <ul>
-                      <li>Python</li>
-                      <li>APIs</li>
-                      <li>AWS</li>
-                      <li>DevOps</li>
-                      <li>Linux</li>
-                      <li>English-Spanish</li>
-                      <li>Self-taught</li>
-                      <li>Teamwork</li>
-                      <li>Problem Solving</li>
-                      <li>Adaptability</li>
-                      <li>Continuous Learning</li>
-                    </ul>
-                    ">Skills</a>
-                </li>
-              </ul>
-          </li>
-        </ul>
-      </nav>
-      <nav class="normal-menu">
-        <ul>
-          <li>
-            <a href="#" class="link clicked" data-content="
-              <p>Welcome<br>
-              To Me<br>
-              Portfolio!<br>
-              Feel free to explore<br>
-              and<br>
-              discover what I have to offer.</p>
-              ">Home</a>
-          </li>
-          <li>
-            <a href="#" class="link" data-content="
-              <p>Greetings,<br>
-              I'm Harold Esteban<br>
-              a dedicated software developer<br>
-              with a talent for optimizing processes<br>
-              through the DevOps methodology.<br><br>
-              When I'm not crafting code,<br>
-              you can find me immersed in music<br>
-              or<br>
-              exploring the world on two wheels.</p>
-              ">About</a>
-          </li>
-          <li>
-            <a href="#" class="link" data-content="
-              <ul>
-                <li>Match</li>
-                <li>Hanoi</li>
-                <li>2Delivery</li>
-              </ul>
-              ">Projects</a>
-          </li>
-          <li>
-            <a href="#" class="link" data-content="
-              <ul>
-                <li>Python</li>
-                <li>APIs</li>
-                <li>AWS</li>
-                <li>DevOps</li>
-                <li>Linux</li>
-                <li>English-Spanish</li>
-                <li>Self-taught</li>
-                <li>Teamwork</li>
-                <li>Problem Solving</li>
-                <li>Adaptability</li>
-                <li>Continuous Learning</li>
-              </ul>
-              ">Skills</a>
-          </li>
-        </ul>
-      </nav>
+    <h2>
+      HOME
+    </h2>
+    <div class="content">
+      <p>
+        Welcome <br>
+        To Me <br>
+        Portfolio! <br>
+        Feel free to explore <br>
+        and <br>
+        discover what I have to offer.
+      </p>
     </div>
-    <div class="content" id="content-div">
-      <p>Welcome<br>
-      To Me<br>
-      Portfolio!<br>
-      Feel free to explore<br>
-      and<br>
-      discover what I have to offer.</p>
+    <h2>
+      ABOUT
+    </h2>
+    <div class="content">
+      <p>
+        Greetings, <br>
+        I'm Harold Esteban <br>
+        a dedicated software developer <br>
+        with a talent for optimizing processes <br>
+        through the DevOps methodology. <br>
+        <br>
+        When I'm not crafting code, <br>
+        you can find me immersed in music <br>
+        or <br>
+        exploring the world on two wheels.
+      </p>
     </div>
-    <div class="footer"><p>This website is under development!!</p></div>
+    <h2>
+      PROJECTS
+    </h2>
+    <div class="content">
+      <ul>
+        <li>Match</li>
+        <li>Hanoi</li>
+        <li>2Delivery</li>
+      </ul>
+    </div>
+    <h2>
+      SKILLS
+    </h2>
+    <div class="content">
+      <ul>
+        <li>Python</li>
+        <li>APIs</li>
+        <li>AWS</li>
+        <li>DevOps</li>
+        <li>Linux</li>
+        <li>English-Spanish</li>
+        <li>Self-taught</li>
+        <li>Teamwork</li>
+        <li>Problem Solving</li>
+        <li>Adaptability</li>
+        <li>Continuous Learning</li>
+      </ul>
+    </div>
+    <h2>
+      HOBBIES
+    </h2>
+    <div class="content">
+      <ul>
+        <li>listen to music</li>
+        <li>ride bike</li>
+        <li>play with my dog</li>
+      </ul>
+    </div>
+    <h2>
+      FOOTER
+    </h2>
+    <p>
+      This website is under development
+    </p>
   </div>
-  <script src="scripts.js"></script>
 </body>
 </html>
