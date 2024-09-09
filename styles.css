@@ -1,53 +1,111 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 body {
-  margin: 0 auto;
+    line-height: 1.6;
 }
 
-h1 {
-  font-size: 4rem;
+/* Hero Section */
+.hero {
+    height: 100vh;
+    background-color: #f4f4f4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 20px;
 }
 
-h2 {
-  font-size: 2rem;
+.hero h1 {
+    font-size: 36px;
 }
 
-p, li {
-  font-size: 1.2rem;
+.hero p {
+    font-size: 18px;
+    margin-top: 10px;
 }
 
-i {
-  font-size: 4vw;
+/* Projects Section */
+.projects {
+    background-color: #fff;
+    padding: 50px 20px;
 }
 
-.main {
-  text-align: center;
-  font-family: monospace, cursive, serif;
+.projects h2 {
+    text-align: center;
+    margin-bottom: 30px;
 }
 
-.header * {
-  display: inline;
+.project-item {
+    background-color: #f9f9f9;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 8px;
 }
 
-.content {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  text-align: left;
+/* Skills section */
+.skills {
+    margin-top: 10px;
 }
 
-ul {
-  list-style-type: none;
-  padding-left: 0;
+.skills span {
+    display: inline-block;
+    background-color: #e0e0e0;
+    color: #333;
+    padding: 5px 10px;
+    border-radius: 20px;
+    margin-right: 5px;
+    font-size: 14px;
+    margin-bottom: 5px;
 }
 
-a {
-  text-decoration: none;
+.skills span:hover {
+    background-color: #333;
+    color: #fff;
 }
 
-.bi-github {
-  color: #333333;
+
+/* Sección About Me */
+.about {
+    background-color: #f4f4f4;
+    padding: 50px 20px;
+    text-align: center;
 }
 
-.bi-linkedin {
-  color: #0077b5;
+.about h2 {
+    margin-bottom: 20px;
 }
 
+.about p {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+/* Contact Section */
+.contact {
+    background-color: #333;
+    color: #fff;
+    padding: 50px 20px;
+    text-align: center;
+}
+
+.contact h2 {
+    margin-bottom: 20px;
+}
+
+.contact p {
+    font-size: 18px;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .hero h1 {
+        font-size: 28px;
+    }
+
+    .projects h2, .about h2, .contact h2 {
+        font-size: 24px;
+    }

@@ -3,98 +3,118 @@
 <head>
   <meta charset="UTF-8">
   <title>HaroldEstn</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
   <link rel="stylesheet" href="styles.css">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
 </head>
 <body>
-  <div class="main">
-    <div class="header">
-      <h1>
-        HaroldEstn
-      </h1>
-      <ul>
-        <li>
-          <a href="https://github.com/HaroldEstn/" target="_blank"><i class="bi bi-github"></i></a>
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+    <a class="navbar-brand" href="#">HaroldEstn</a>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item">
+          <a class="nav-link" href="#">Projects</a>
         </li>
-        <li>
-          <a href="https://www.linkedin.com/in/haroldestn" target="_blank"><i class="bi bi-linkedin"></i></a>
+        <li class="nav-item">
+          <a class="nav-link" href="#">About Me</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Contact</a>
         </li>
       </ul>
+      <div class="nav-item ml-auto">
+          <a href="https://www.linkedin.com/in/haroldestn" target="_blank">Linkedin <i class="bi bi-linkedin"></i></a>
+          <a href="https://github.com/HaroldEstn/" target="_blank">GitHub<i class="bi bi-github"></i></a>
+      </div>
     </div>
-    <h2>
-      HOME
-    </h2>
-    <div class="content">
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+  </nav>
+  <section class="hero">
+      <div>
+          <h1>Welcome to my backend universe!</h1>
+          <p>Dive into the world of custom AWS solutions.</p>
+      </div>
+  </section>
+  <section id="projects" class="projects">
+      <h2>Projects</h2>
+      <div class="project-item">
+          <h3>2 Delivery</h3>
+          <p>Led the deployment and management of AWS infrastructure for 2Delivery, a route optimization platform. Developed core RESTful APIs, including the route assignment engine, and collaborated closely with other developers to ensure seamless integration between the backend, frontend, and mobile applications.</p>
+          <div class="skills">
+              <span>Python</span>
+              <span>Team work</span>
+              <span>Flask</span>
+              <span>MySQL</span>
+              <span>AWS</span>
+              <span>HERE Technologies</span>
+              <span>API</span>
+              <span>Docker</span>
+              <span>CI/CD</span>
+              <span>Git</span>
+              <span>AWS Lambda</span>
+              <span>AWS CodePipeline</span>
+              <span>Linux</span>
+              <span>DevOps</span>
+          </div>
+      </div>
+      <div class="project-item">
+          <h3>Geofy</h3>
+          <p>Developed the cloud infrastructure and RESTful APIs for Geofy, a geocoding platform. Utilized Here Technologies to obtain accurate geographic data and build a robust system for geocoding addresses and coordinates. Worked closely with other developers to ensure seamless integration between the backend and frontend.</p>
+          <div class="skills">
+              <span>Python</span>
+              <span>Team work</span>
+              <span>FastAPI</span>
+              <span>MySQL</span>
+              <span>AWS</span>
+              <span>HERE Technologies</span>
+              <span>API</span>
+              <span>Docker</span>
+              <span>CI/CD</span>
+              <span>Git</span>
+              <span>AWS Lambda</span>
+              <span>AWS CodePipeline</span>
+              <span>Linux</span>
+              <span>DevOps</span>
+          </div>
+      </div>
+      <div class="project-item">
+          <h3>Hanoi</h3>
+          <p>Implemented a text-based version of the classic Tower of Hanoi puzzle. Utilized algorithms to solve the puzzle efficiently and provide a challenging gameplay experience.</p>
+          <div class="skills">
+              <span>C++</span>
+              <span>Git</span>
+          </div>
+      </div>
+      </div>
+      <div class="project-item">
+          <h3>Match cards</h3>
+          <p>Developed a memory matching game as my first personal project. Implemented features such as a timer, move counter, and a user-friendly interface.</p>
+          <div class="skills">
+              <span>Python</span>
+              <span>Git</span>
+          </div>
+      </div>
+  </section>
+  <section id="about" class="about">
+      <h2>About Me</h2>
       <p>
-        Welcome <br>
-        To Me <br>
-        Portfolio! <br>
-        Feel free to explore <br>
-        and <br>
-        discover what I have to offer.
+        Backend Developer with 3 years of experience building scalable and robust cloud-based solutions on AWS. Passionate about optimizing processes and crafting efficient backend architectures using Python, Flask, and FastAPI. Proficient in implementing AWS services like Lambda, DynamoDB, and API Gateway, and hold certifications as an AWS Developer Associate and SysOps Administrator Associate.
       </p>
-    </div>
-    <h2>
-      ABOUT
-    </h2>
-    <div class="content">
+      <br>
       <p>
-        Greetings, <br>
-        I'm Harold Esteban <br>
-        a dedicated software developer <br>
-        with a talent for optimizing processes <br>
-        through the DevOps methodology. <br>
-        <br>
-        When I'm not crafting code, <br>
-        you can find me immersed in music <br>
-        or <br>
-        exploring the world on two wheels.
+        My projects have involved developing RESTful APIs and implementing CI/CD pipelines to automate the build, test, and deployment of code, contributing to the continuous delivery of high-quality software. I've also gained experience in configuring AWS environments for development and production, ensuring seamless deployment and scalability.
       </p>
-    </div>
-    <h2>
-      PROJECTS
-    </h2>
-    <div class="content">
-      <ul>
-        <li>Match</li>
-        <li>Hanoi</li>
-        <li>2Delivery</li>
-      </ul>
-    </div>
-    <h2>
-      SKILLS
-    </h2>
-    <div class="content">
-      <ul>
-        <li>Python</li>
-        <li>APIs</li>
-        <li>AWS</li>
-        <li>DevOps</li>
-        <li>Linux</li>
-        <li>English-Spanish</li>
-        <li>Self-taught</li>
-        <li>Teamwork</li>
-        <li>Problem Solving</li>
-        <li>Adaptability</li>
-        <li>Continuous Learning</li>
-      </ul>
-    </div>
-    <h2>
-      HOBBIES
-    </h2>
-    <div class="content">
-      <ul>
-        <li>listen to music</li>
-        <li>ride bike</li>
-        <li>play with my dog</li>
-      </ul>
-    </div>
-    <h2>
-      FOOTER
-    </h2>
-    <p>
-      This website is under development
-    </p>
-  </div>
+
+  </section>
+  <section id="contact" class="contact">
+      <h2>Contact</h2>
+          <a href="https://www.linkedin.com/in/haroldestn" target="_blank">linkedin <i class="bi bi-linkedin"></i></a>
+      <!-- <p>email: ***</p> -->
+  </section>
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
 </body>
 </html>
